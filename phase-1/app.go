@@ -5,6 +5,7 @@ import (
 
 	"example.com/phase1/basicmaths"
 	"example.com/phase1/loops"
+	maxofthree "example.com/phase1/maxOfThree"
 	"example.com/phase1/numberchecker"
 )
 
@@ -28,6 +29,8 @@ func main() {
 			numberchecker.CheckNumberProperty()
 		case 3:
 			loops.PlayWithLoops()
+		case 4:
+			maxofthree.FindMaxOfThree()
 		default:
 			fmt.Println("Currently Not supported")
 			fmt.Println("Exiting ...")
