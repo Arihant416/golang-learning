@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"example.com/phase1/basicmaths"
+	"example.com/phase1/loops"
 	"example.com/phase1/numberchecker"
 )
 
@@ -25,6 +26,8 @@ func main() {
 			basicmaths.PlayTheGameOfArithmetics()
 		case 2:
 			numberchecker.CheckNumberProperty()
+		case 3:
+			loops.PlayWithLoops()
 		default:
 			fmt.Println("Currently Not supported")
 			fmt.Println("Exiting ...")
