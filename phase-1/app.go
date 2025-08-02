@@ -31,6 +31,8 @@ func main() {
 			loops.PlayWithLoops()
 		case 4:
 			maxofthree.FindMaxOfThree()
+		case 5:
+			FindFactorial()
 		default:
 			fmt.Println("Currently Not supported")
 			fmt.Println("Exiting ...")
