@@ -4,5 +4,17 @@
 
 ### *Phase 1*
 
-`Includes Essentials and Basics of Go: Variables, Packages, Control Flow, Pointers, Functions, operators, loops.
-`
+#### Includes the following topics
+
++ Variables and data types
++ Basic Syntax
++ Control Structure (If/Else, Switch Case)
++ The versatile For Loop
++ Pointers
++ Very basic recursion
+
+### *Phase 2*
+
+#### Includes slightly more advanced topics
+
++ Structs (Fields and Methods)
