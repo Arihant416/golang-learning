@@ -18,6 +18,12 @@ func main() {
 		return
 	}
 
+	admin := user.NewAdmin("test@gmail.com", "knsdfoeinq")
+
+	admin.OutputUserDetails()
+	admin.ClearUserName()
+	admin.OutputUserDetails()
+
 	person.OutputUserDetails()
 	person.ClearUserName()
 	person.OutputUserDetails()
@@ -27,11 +33,6 @@ func main() {
 
 // func outputUserDetails(person *user) {
 // 	fmt.Println("FirstName", person.firstName)
-// 	fmt.Println("LastName", person.lastName)
-// 	fmt.Println("BirthDay", person.birthDate)
-// 	fmt.Println("CreatedAt", person.createdAt)
-
-// }
 
 func getUserData(promptText string) string {
 	fmt.Print(promptText)

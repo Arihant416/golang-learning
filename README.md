@@ -21,5 +21,7 @@
   + Fields
   + Methods
   + Mutation Methods
-  + Creation/Constructor Functions
-  
+  + Creation/Constructor Functions (This is more of a pattern)
+  + Struct Embeddings (A similar thing like Inheritance)
+    + Can be anonymous
+    + Can be "key type" representation too both vary
