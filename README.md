@@ -17,4 +17,9 @@
 
 #### Includes slightly more advanced topics
 
-+ Structs (Fields and Methods)
++ Structs
+  + Fields
+  + Methods
+  + Mutation Methods
+  + Creation/Constructor Functions
+  
