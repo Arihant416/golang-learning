@@ -25,3 +25,6 @@
   + Struct Embeddings (A similar thing like Inheritance)
     + Can be anonymous
     + Can be "key type" representation too both vary
+  + Bufio Package for NewReader() to read long line inputs instead of using Scan with limited OneWord Input
+  + Strings Package for TrimSuffix() and More Function
+  
