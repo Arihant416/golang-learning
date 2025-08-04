@@ -26,5 +26,5 @@
     + Can be anonymous
     + Can be "key type" representation too both vary
   + Bufio Package for NewReader() to read long line inputs instead of using Scan with limited OneWord Input
-  + Strings Package for TrimSuffix() and More Function
-  
+  + Strings Package for TrimSuffix() and More Function like ToLower(), ParseFloat() etc.
+  + encoding/json package for Json Conversion and the Marshal function
