@@ -5,14 +5,30 @@ import (
 	"fmt"
 	"os"
 	"practice/note"
+	"practice/todo"
 	"strings"
 )
 
 func main() {
 	title, content := getNoteDetails()
+	text := getUserInput("Todo text: ")
+
+	todo, err := todo.New(text)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	todo.DisplayNote()
+	err = todo.Save()
+
+	if err != nil {
+		fmt.Println("Failed to Save the Todo")
+		return
+	}
+	fmt.Println("Todo Saved Successfully")
 
 	userNote, err := note.New(title, content)
-
 	if err != nil {
 		fmt.Println(err)
 		return
