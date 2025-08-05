@@ -51,3 +51,14 @@
     + Polymorphism : Enabling different types to be treated as the same type, allowing for flexible and reusable code.
     + Decoupling Code : Reducing dependencies between components in a system, making it easier to test and maintain.
     + Dependency Injection : Allowing for the specification of behaviors without needing to know concrete implementations.
+  + Type
+
++ Generics
+  + Interfaces has certain limitations of type-safety, overcomplicating codebase and a couple more
+  + Generics come into picture to help us from that. Generics in Go are a feature that allows you to define functions and data structures that can operate on different types without being explicitly tied to specific ones. It enhances code reusability and provides better type safety in comparison to Interfaces.
+  ```
+  func Add[T int|string|float64](a, b T) T {
+    return a+b
+  }
+  ```
+  + Flexibility: With generics, you can write a single function that can work with different types, without needing to overload or create multiple functions for each type
