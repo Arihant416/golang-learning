@@ -62,3 +62,18 @@
   }
   ```
   + Flexibility: With generics, you can write a single function that can work with different types, without needing to overload or create multiple functions for each type
+
++ Collections
+  + `Array`: Works pretty much like how arrays work in C++, Java, except for the syntanctical differences ofcourse.
+    + Fixed Sized DataStructures with specific length
+    + Slices on the other hand are dynamically sized, They can grow and shrink as needed! 
+  + `Slice`: Very very interesting concept in Go. 
+    + Basically works more-or-less like slices in Python but the catch here is, slices are essentially a view into an array. 
+    + When you create a slice, Go manages the underlying array automatically.
+  + `Using Slices to build Dynamic Array` :
+    + You operate on the slice, and if you append to it, Go may allocate a new array if the current on can't accommodate additional elements
+    + `append()` function can be used to add elements to a slice. If slice exceeds its capacity, Go allocates a new larger array and copies the content over, which is managed behind the scenes.
+  + `Memory Management` : Go Takes care of memory when slices grow. 
+  + `Removing Elements`: To remove an element from the slice, you can create a new slice that omits the unwanted elements. 
+  + `Performance`: Since slices are resizable, they incorporate increase flexibility compared to arrays. 
+  + `Reference behaviour`: Slices are not references by default. If you want to pass a slice to a function reference, you'll have to use the pointer semantics explicitly.
