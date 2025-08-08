@@ -16,6 +16,10 @@ func main() {
 	// prices[2] = 10 This will  cause an Index Out of range error
 	updatedPrices := append(prices, 5.99)
 	fmt.Println(updatedPrices, prices)
+
+	newPrices := []float64{100.9, 110.9}
+	prices = append(prices, newPrices...)
+	fmt.Println(prices)
 }
 
 // func main() {
