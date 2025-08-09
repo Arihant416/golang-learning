@@ -77,3 +77,6 @@
   + `Removing Elements`: To remove an element from the slice, you can create a new slice that omits the unwanted elements. 
   + `Performance`: Since slices are resizable, they incorporate increase flexibility compared to arrays. 
   + `Reference behaviour`: Slices are not references by default. If you want to pass a slice to a function reference, you'll have to use the pointer semantics explicitly.
+  + #### Maps:
+    + A key value data store! Also, provides mutation capabilities and more flexibility with data types as compared to Struct which is of a fixed type pre-defined on compilation.
+    + 
