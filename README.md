@@ -79,4 +79,22 @@
   + `Reference behaviour`: Slices are not references by default. If you want to pass a slice to a function reference, you'll have to use the pointer semantics explicitly.
   + #### Maps:
     + A key value data store! Also, provides mutation capabilities and more flexibility with data types as compared to Struct which is of a fixed type pre-defined on compilation.
-    + 
+  + `Make` in Go : A built-in function used for the initialisation of certain data-structures such as a slices, maps and chanels! 
+    + **Purpose**: make is used to allocate and initialise memory for slices, maps and chanels. It sets up internal data structures and ensures that the created structure is usable.
+    + For 
+      + Slices : make([]Type, length, capacity)
+      + Maps : make(map[KeyType]ValueType, capacity)
+      + Channels: make(chan Type, capacity) -> Channels in Phase 3
+  + `Type-Aliases`:
+    + In Go, a type alias provides a new name for an existing type. Helps in improving code readability or maintaining compatibility when refactoring code
+    ``` 
+      Defining a type alias
+      type myIntAlias = int
+
+      Differences from Type Definition - Unlike type definitions which creates a distinct new type, type aliases refer to the same underlying type. For instance
+      type myIntDef int // A new Type
+      type myIntAlias = int // An alias for int
+
+      Methods cannot be associated with type aliases, while they can be defined for custom types created via type definitions!
+    ```
+  
