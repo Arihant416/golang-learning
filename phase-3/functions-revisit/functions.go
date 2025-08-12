@@ -2,9 +2,7 @@ package main
 
 import "fmt"
 
-
 type transformFn func(int) int
-
 
 func main() {
 	numbers := []int{1, 2, 3, 4}
@@ -39,4 +37,8 @@ func double(number int) int {
 
 func triple(number int) int {
 	return number * 3
+}
+
+func getTransformerFn() transformFn {
+	return double
 }

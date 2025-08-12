@@ -97,4 +97,21 @@
 
       Methods cannot be associated with type aliases, while they can be defined for custom types created via type definitions!
     ```
-  
+
+### *Phase 3*
+
+Dived a little more into Functions, Functions passed as values, returning functions as values, funtions types, Anonymous functions, Recursion, Closures, Variadic functions etc.
+
+
+Functions in Go are first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned as values from functions.
+
+#### Anonymous Functions
+
+-> Functions which are defined without a name and created at the point of need. (More like a throwaway post use functions used immediately or for creating closures)  
+-> Particularly useful when for scenarios where a function is needed only once. 
+
+
+#### Closures
+
+-> Uses another aspect of Anonymous function! A fundamentally important concept
+-> A closure is an anonymous function that captures variables from the surrounding scope.
