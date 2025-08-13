@@ -13,6 +13,9 @@ func main() {
 	fmt.Println(doubledManual)
 	fmt.Println(doubled)
 	fmt.Println(tripled)
+
+	fmt.Println("Iterative Factorial of 5", findFactorialIteratively(5))
+	fmt.Println("Recursive Factorial of 6", findFactorialRecursively(6))
 }
 
 func doubleNumbers(numbers *[]int) []int {
@@ -41,4 +44,19 @@ func triple(number int) int {
 
 func getTransformerFn() transformFn {
 	return double
+}
+
+func findFactorialIteratively(number int) int {
+	result := 1
+	for i := 1; i <= number; i++ {
+		result *= i
+	}
+	return result
+}
+
+func findFactorialRecursively(number int) int {
+	if number <= 1 {
+		return 1
+	}
+	return number * findFactorialRecursively(number-1)
 }

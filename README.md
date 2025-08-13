@@ -114,4 +114,27 @@ Functions in Go are first-class citizens, meaning they can be assigned to variab
 #### Closures
 
 -> Uses another aspect of Anonymous function! A fundamentally important concept
--> A closure is an anonymous function that captures variables from the surrounding scope.
+-> A closure is an anonymous function that captures variables from the surrounding scope. The speciality is it remembers the variables from its surroundings even after the context has finished executing. Kinda like a persistent scope.
+
+#### Relationship between Anonymous functions and closures
+
+-> A closure is created when an anonymous function captures the variables from its surrounding context. Below's an example:
+```Go
+package main
+
+import "fmt"
+
+func multiplier(factor int) func(int) int{
+  return func(x int) int {
+    return x * factor // Captures "factor" from the surrounding lexical scope.
+  }
+}
+
+func main(){
+  double := multiplier(2) 
+  triple := multiplier(3)
+
+  fmt.Println(double(5)) // Output: 10
+  fmt.Println(triple(5)) // Output: 15
+}
+```
